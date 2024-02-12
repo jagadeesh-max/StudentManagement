@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>To show data</title>
+</head>
+<body>
+<h1>see data here</h1>
+
+<table border="1">
+<thead>
+<tr>
+<th>Kid</th>
+<th>Name</th>
+<th>Batch</th>
+</tr>
+</thead>
+<tbody>
+<tr th:each="student:${student}">
+<td th:text="${student.kid}"></td>
+<td th:text="${student.name}"></td>
+<td th:text="${student.batch}"></td>
+</tr>
+</tbody>
+
+</table>
+
+</body>
+</html>
